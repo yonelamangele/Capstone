@@ -1,33 +1,36 @@
 <template>
-  <nav>
-    <router-link to="/"> Home </router-link> |
-    <router-link to="/about"> About </router-link> |
-    <router-link to="/about"> products </router-link> |
-    <router-link to="/about"> admin </router-link> |
-    <router-link to="/about"> reach us </router-link>
-  </nav>
   <router-view/>
+  <navBar-comp/>
+  <background-comp/>
 </template>
 
+<script>
+
+import NavBarComp from './components/NavBarComp.vue'
+import BackgroundComp from './components/BackgroundComp.vue';
+
+export default {
+  components:{
+    NavBarComp,
+    BackgroundComp
+  }
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  @import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Oswald:wght@200..700&family=Sevillana&display=swap');  
+  
+  nav {
+    padding: 10px;
+    align-items: end;
+  }
 
-nav {
-  padding: 30px;
-}
+  body{
+    background-image: url('/images/canva-untitled-MAEGTRdTBm4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 0vh; */
+    font-family: "New Amsterdam", sans-serif;
+  }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
