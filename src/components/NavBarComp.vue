@@ -38,6 +38,7 @@ export default {
 a {
     font-size: 30px;
     color: white;
+    /* border: solid 5px white */
 }
 
 .gang {

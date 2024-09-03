@@ -18,11 +18,11 @@ export default {
 
 <style scoped>
     a {
-    color: black;
+    color: white;
     margin: 10px;
   }
   .links {
-    margin-top: 450px;
+    margin-top: 360px;
     margin-bottom: 10px;
   }
   .add {
