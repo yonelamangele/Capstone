@@ -30,7 +30,7 @@
 export default {
   data() {
     return {
-      vegeta: 'https://yonelamangele.github.io/Capstone/images/vegeta.jpg',
+      vegeta: 'https://yonelamangele.github.io/Capstone/images/vegeta.png',
       luffy: 'https://yonelamangele.github.io/Capstone/images/luffy.jpg',
       zenitsu: 'https://yonelamangele.github.io/Capstone/images/zenitsu.jpg'
     }
@@ -74,7 +74,7 @@ export default {
     }
 
     img {
-      width: 600px;
+      width: 400px;
       height: 300px;
       border-radius: 1ch;
     }
