@@ -7,6 +7,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
           <img :src="vegeta" class="d-block w-100" alt="...">
+          <h1> <u> Dragon Ball Poster </u> </h1>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
           <img :src="luffy" class="d-block w-100" alt="...">
@@ -30,9 +31,9 @@
 export default {
   data() {
     return {
-      vegeta: 'https://yonelamangele.github.io/Capstone/images/vegeta.png',
-      luffy: 'https://yonelamangele.github.io/Capstone/images/luffy.jpg',
-      zenitsu: 'https://yonelamangele.github.io/Capstone/images/zenitsu.jpg'
+      vegeta: 'https://yonelamangele.github.io/Capstone/images/vegeta_LE_auto_x2.jpg',
+      luffy: 'https://yonelamangele.github.io/Capstone/images/luffy.png',
+      zenitsu: 'https://yonelamangele.github.io/Capstone/images/zenitsu.png'
     }
   }
 }
@@ -81,5 +82,10 @@ export default {
 
     span {
       background-color: black;
+    }
+
+    h1 {
+      text-align: center;
+    font-family: "Rubik Glitch", system-ui;
     }
 </style>
