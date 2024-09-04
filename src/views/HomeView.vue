@@ -1,12 +1,40 @@
 <template>
-    <div class="para">
+    <div class="para" :style="{height: '30vh'}">
       <h3> Hello There! We're Capture Words, a world of powerful anime quotes <br> where you can capture words of your interest to customize your home, your office or any of your personal spaces. <br> Explore our amazing deals and have fun.</h3> 
+    </div>
+    
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img :src="vegeta" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img :src="luffy" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img :src="zenitsu" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 </template>
 
 <script>
 export default {
-  
+  data() {
+    return {
+      vegeta: 'https://yonelamangele.github.io/Capstone/images/vegeta.jpg',
+      luffy: 'https://yonelamangele.github.io/Capstone/images/luffy.jpg',
+      zenitsu: 'https://yonelamangele.github.io/Capstone/images/zenitsu.jpg'
+    }
+  }
 }
 </script>
 
@@ -40,4 +68,18 @@ export default {
       transform-origin: center -20px;
     }
 
+    .carousel {
+      width: 600px;
+      height: 300px;
+    }
+
+    img {
+      width: 600px;
+      height: 300px;
+      border-radius: 1ch;
+    }
+
+    span {
+      background-color: black;
+    }
 </style>

@@ -27,7 +27,7 @@ export default {
     background-image: url('https://yonelamangele.github.io/Capstone/images/Screenshot%202024-09-02%20172305.png');
     background-repeat: no-repeat;
     background-size: cover;
-    
+    background-attachment: fixed;
     color: white;
   }
 </style>
